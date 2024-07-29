@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - See you later
+      - Goodbye
+
+  - intent: request_product_info
+    examples: |
+      - Tell me about the product
+      - What is the product information?
+      - Give me details about the product
+
+  - intent: provide_product_info
+    examples: |
+      - Show me the product details
+      - Provide information about the product
+      - I want to see the product info

@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+  - story: Greet and request product info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_product_info
+      - action: utter_product_info
+
+  - story: Provide product information
+    steps:
+      - intent: provide_product_info
+      - action: utter_custom_tunii_links
+      - action: utter_product_links
+  
+  - story: store product info
+    steps:
+      - intent: inform
+      - action: action_store_product_info
+      - action: utter_inform
+
+  - story: Farewell
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
